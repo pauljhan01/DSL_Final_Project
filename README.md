@@ -2,6 +2,8 @@
 # Labeling Armor Plates using YOLO v5 and Training that Model on the Beaglebone AI-64
 By Paul Han, Drew Conyers, Michael Routh, Tristan Becnel, Kenneth Pinzon 
 
+https://cdn.discordapp.com/attachments/1095549530583343116/1100186102838607982/Fleet_Render_1x1.png 
+
 ## Section 1: Problem Overview
 In this project, we used an object detection machine learning algorithm called YOLO v5 (You Only Look Once) for detecting Robomaster armor plates with high, consistent accuracy. We then enhanced its performance on a System-on-Chip (SoC) called Beaglebone AI-64, equipped with an Intel Realsense camera, to achieve very high frames per second. Our approach involves using ONNX (Open Neural Network Exchange) files, which accelerate matrix operations and inference for faster calculations. To accomplish this, we collected and labeled images of armor places attached to competition robots and trained YOLO v5 using these images in a supervised learning manner. Our dataset comprises images provided by Purdue University’s Boilderbots and the University of Texas’ Stampede Robomaster teams, which were labeled using Computer Vision Annotation Tool (CVAT). We used approximately four thousand images for training. The YOLO v5 model, pre-trained on the COCO dataset, is retrained on the Robomaster dataset to detect armor places, a critical component of Robomaster competition, as damage in the game is only incurred when armor places are hit. Using YOLO API, we modified and tailored the YOLO v5 model to suit our project’s requirements.
 
